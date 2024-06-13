@@ -8,7 +8,11 @@ const Products = (props) => {
       <Container>
         <div>
           <Image src={props.Image} />
-          <div className="text-center"></div>
+          <div className="text-center">
+            <p>{props.category}</p>
+            <p>{props.price}</p>
+          </div>
+          <button>update me</button>
         </div>
       </Container>
     </>
