@@ -1,9 +1,15 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-import 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Products from "./Products";
 
 function App() {
+  <Router>
+    <Routes>
+      <Route path="/" exact element={<Products />} />
+    </Routes>
+  </Router>;
   const [products, setPoduct] = useState([
     {
       category: "glass",
@@ -47,7 +53,7 @@ function App() {
       <h1>what do you think</h1>
       {products.map((product) => {
         console.log(product);
-      <Product name/>  
+        <Products name />;
       })}
     </div>
   );
