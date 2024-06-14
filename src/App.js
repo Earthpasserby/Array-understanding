@@ -51,9 +51,12 @@ function App() {
   return (
     <div className="App ">
       <h1>what do you think</h1>
-      {products.map((product) => {
-        console.log(product);
-        <Products name />;
+      {Products.map((products) => {
+        <Products
+          name={products.category}
+          price={products.price}
+          Image={products.Image}
+        />;
       })}
     </div>
   );
