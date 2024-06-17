@@ -10,6 +10,7 @@ function App() {
       <Route path="/" exact element={<Products />} />
     </Routes>
   </Router>;
+  const Goods = ["rice", "beans", "garri", "yam"];
   const [products, setPoduct] = useState([
     {
       category: "glass",
