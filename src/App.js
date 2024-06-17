@@ -10,55 +10,71 @@ function App() {
       <Route path="/" exact element={<Products />} />
     </Routes>
   </Router>;
-  const Goods = ["rice", "beans", "garri", "yam"];
-  const [products, setPoduct] = useState([
+  const products = [
     {
       category: "glass",
       Image:
         "https://img.freepik.com/premium-photo/portrait-young-woman-using-mobile-phone_1048944-30344856.jpg",
       price: "$400",
     },
+
     {
-      category: ["design", "red"],
+      category: ["watch"],
       Image:
         "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
       price: "$400",
     },
+
     {
-      category: ["design", "red"],
+      category: ["belt"],
       Image:
         "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
       price: "$400",
     },
-    {
-      category: ["design", "red"],
-      Image:
-        "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
-      price: "$400",
-    },
-    {
-      category: ["design", "red"],
-      Image:
-        "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
-      price: "$400",
-    },
-    {
-      category: ["design", "red"],
-      Image:
-        "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
-      price: "$400",
-    },
-  ]);
+  ];
+  // const [products, setPoduct] = useState([
+  //   {
+  //     category: "glass",
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/portrait-young-woman-using-mobile-phone_1048944-30344856.jpg",
+  //     price: "$400",
+  //   },
+  //   {
+  //     category: ["design", "red"],
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
+  //     price: "$400",
+  //   },
+  //   {
+  //     category: ["design", "red"],
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
+  //     price: "$400",
+  //   },
+  //   {
+  //     category: ["design", "red"],
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
+  //     price: "$400",
+  //   },
+  //   {
+  //     category: ["design", "red"],
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
+  //     price: "$400",
+  //   },
+  //   {
+  //     category: ["design", "red"],
+  //     Image:
+  //       "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
+  //     price: "$400",
+  //   },
+  // ]);
   return (
     <div className="App ">
-      <h1>what do you think</h1>
-      {Products.map((products) => {
-        <Products
-          name={products.category}
-          price={products.price}
-          Image={products.Image}
-        />;
-      })}
+      {products.map((product) => (
+        <h1>{product.category}</h1>
+      ))}
     </div>
   );
 }
