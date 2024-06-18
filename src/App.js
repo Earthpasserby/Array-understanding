@@ -73,7 +73,10 @@ function App() {
   return (
     <div className="App ">
       {products.map((product) => (
-        <h1>{product.category}</h1>
+        <div>
+          <h1>{product.category}</h1>
+          <p>{product.Image}</p>
+        </div>
       ))}
     </div>
   );
