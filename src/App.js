@@ -82,4 +82,9 @@ function App() {
   );
 }
 
+function great() {
+  for (var i = 0; i < 0; i++) {
+    console.log("learning");
+  }
+}
 export default App;
