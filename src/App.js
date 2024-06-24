@@ -85,16 +85,18 @@ function App() {
     </div>
   );
 }
- 
-const mango ={
-  color:'yellow',
-  price:'400',
-  length:'50',
-  item: 'rice',
-  about: function(){
-    return 'This '+this.item+' is '+this.price+' Nigerian naira.'
-  }
-}
+
+const mango = {
+  color: "yellow",
+  price: "400",
+  length: "50",
+  item: "rice",
+  about: function () {
+    //return 'This '+this.item+' is '+this.price+' Nigerian naira.'
+    return `This ${this.color}, ${this.item} is ${this.price} naira  and  is ${this.length} in length`;
+  },
+};
+console.log(mango.about());
 
 function great() {
   for (var i = 0; i < 4; i++) {
