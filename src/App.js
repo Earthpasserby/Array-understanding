@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
+import { Image } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./Products";
 
@@ -12,24 +13,27 @@ function App() {
   </Router>;
   const products = [
     {
-      category: "glass",
-      Image:
+      category: ["glass"],
+      Image: [
         "https://img.freepik.com/premium-photo/portrait-young-woman-using-mobile-phone_1048944-30344856.jpg",
-      price: "$400",
+      ],
+      price: ["$400"],
     },
 
     {
       category: ["watch"],
-      Image:
+      Image: [
         "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
-      price: "$400",
+      ],
+      price: ["$400"],
     },
 
     {
       category: ["belt"],
-      Image:
+      Image: [
         "https://img.freepik.com/premium-photo/business-people-working-office_1048944-30369177.jpg?w=900",
-      price: "$400",
+      ],
+      price: ["$400"],
     },
   ];
   // const [products, setPoduct] = useState([
@@ -81,10 +85,22 @@ function App() {
     </div>
   );
 }
-
-function great() {
-  for (var i = 0; i < 0; i++) {
-    console.log("learning");
+ 
+const mango ={
+  color:'yellow',
+  price:'400',
+  length:'50',
+  item: 'rice',
+  about: function(){
+    return 'This '+this.item+' is '+this.price+' Nigerian naira.'
   }
 }
+
+function great() {
+  for (var i = 0; i < 4; i++) {
+    console.log("learning");
+  }
+  // console.log(i);
+}
+great();
 export default App;
